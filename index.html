@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorota</title>
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script></head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="wrapper">
+                <input type='checkbox' id='toggle' style='display:none;' />
+                    <label class='toggle-btn' for='toggle'>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label> 
+                <div class="nav__logo">
+                    <h1><a id="scroll-logo">Logo</a></h1>
+                </div>
+                <div class="nav__menu">
+                    <ul>
+                        <li><a id="scroll-home">Home</a></li>
+                        <li><a id="scroll-steps">Kroki</a></li>
+                        <li><a id="scroll-price">Cennik</a></li>
+                        <li><a id="scroll-reviews">Opinie</a></li>
+                        <li><a href="tel:000-000-000">Zadzwoń</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="splash">
+        <div class="wrapper">
+
+        </div>
+    </section>
+
+
+    <section class="steps" id="steps">
+        <div class="container">
+            <h3 class="section__title">Kroki</h3>
+            <p class="section__paragraph">Wystarczą trzy proste kroki do czystości w Twoim otoczeniu. Sprawdź i przekonaj się sam!</p>
+            <div class="wrapper">
+                <div class="steps__box">
+                    <img src="../icons/svg/003-mobile.svg" alt="" type="svg">
+                    <h4>Zadzwoń i umów sprzątanie</h4>
+                    <p>Zadzwoń do jednej z nas i przekonaj się jakie to proste!</p>
+                    <span>1</span>
+                </div>
+                <div class="steps__box">
+                    <img src="../icons/svg/002-wallet.svg" alt="" type="svg">
+                    <h4>Zapłać przelewem</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span>2</span>
+                </div>
+                <div class="steps__box">
+                    <img src="../icons/svg/001-house.svg" alt="" type="svg">
+                    <h4>Ciesz się czystością</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span>3</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="price" id="price">
+        <div class="container">
+            <h3 class="section__title section__title--light">Cennik</h3>
+            <p class="section__paragraph">Wybierz pakiet odpowiadający Twoim potrzebom, zadzwoń do nas i umów termin.</p>
+            <div class="wrapper">
+                <div class="price__box">
+                    <h4>Sprzątanie biura/lokalu</h4>
+                    <p>Opis czynności</p>
+                    <table class="price__box--table">
+                        <tr>
+                            <td><h5>Cennik</h5></td>
+                        </tr>                        
+                        <tr>
+                            <td>Zmienna</td> <td>50zł</td>
+                        </tr>
+                        <tr>
+                            <td>Zmienna</td> <td>60zł</td>
+                        </tr>
+                        <tr>
+                            <td>Zmienna</td> <td>100zł</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="price__box">
+                    <h4>Mycie okien</h4>
+                    <p>Opis czynności</p>
+                    <table class="price__box--table">
+                        <tr>
+                            <td><h5>Cennik</h5></td>
+                        </tr>
+                        <tr>
+                            <td>Zmienna</td> <td>40zł</td>
+                        </tr>
+                        <tr>
+                            <td>Zmienna</td> <td>60zł</td>
+                        </tr>
+                        <tr>
+                            <td>Zmienna</td> <td>80zł</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="price__box">
+                    <h4>Sprzątanie po remoncie</h4>
+                    <p>Opis czynności</p>
+                    <table class="price__box--table">
+                        <tr>
+                            <td><h5>Cennik</h5></td>
+                        </tr>                        
+                        <tr>
+                            <td>Zmienna</td> <td>90zł</td>
+                        </tr>
+                        <tr>
+                            <td>Zmienna</td> <td>120zł</td>
+                        </tr>
+                        <tr>
+                            <td>Zmienna</td> <td>150zł</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h3 class="section__title">Opinie</h3>
+            <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel ante at eros suscipit fringilla ac id tortor.</p>
+            <div class="reviews__box">
+                <img src="img/user.png" alt="">
+                <div class="reviews__box--text">
+                    <h4>Anna K.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel ante at eros suscipit fringilla ac id tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel ante at eros suscipit fringilla ac id tortor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info">
+        <div class="container">
+            <div class="wrapper">
+                <div class="info__box">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li>example@example.pl</li>
+                        <li>+48 000-000-000</li>
+                        <li>+48 000-000-000</li>
+                    </ul>        
+                </div>
+                <div class="info__box">
+                    <h4>Dane do przelewu</h4>
+                    <ul>
+                        <li>Bank jakis tam</li>
+                        <li>Adres banku jakiegos tam</li>
+                        <li>00 0000 0000 0000 0000</li>
+                    </ul>        
+                </div>
+                <div class="info__box">
+                    <h4>Miasta</h4>
+                    <ul>
+                        <li>Katowice</li>
+                        <li>Siemianowice Śląskie</li>
+                        <li>Sosnowiec</li>
+                        <li>Bytom</li>
+                        <li>Czeladź</li>
+                    </ul>        
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-info">2020 &copy; LOGO</p>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
