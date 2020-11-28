@@ -1,5 +1,6 @@
 function scrollToElement() {
     toggle = document.getElementById('toggle');
+    
 
     $("#scroll-steps").click(function() {
         $([document.documentElement, document.body]).animate({
@@ -26,4 +27,20 @@ function scrollToElement() {
         toggle.checked = false;
     });
 
-} scrollToElement();
+} 
+
+scrollToElement();
+
+function showTable() {
+    priceBox = document.querySelectorAll('.price__box button');
+
+    for(let priceHead of priceBox) {
+        priceHead.addEventListener('click', function() {
+            table = priceHead.nextSibling.nextSibling;
+
+            (table.style.display === "block") ? table.style.display = "none" : table.style.display = "block";
+        })
+    }
+}
+
+showTable();

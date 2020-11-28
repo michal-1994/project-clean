@@ -200,10 +200,28 @@ h4, h5 {
 .price__box {
     width: 30%;
     text-align: left;
-    h4 {
-        font-size: 18px;
+    button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 20px;
-        text-transform: uppercase;
+        padding: 10px 0;
+        border: 1px solid @color-primary;
+        background: @color-primary;
+        border-radius: @radius;
+        transition: @transition;
+        cursor: pointer;
+        h4 {
+            font-size: 18px;
+            text-transform: uppercase;
+            color: @color-light;
+        }
+        &:hover {
+            transition: @transition;
+            background: darken(@color-primary, 2%);
+            border: 1px solid @color-light;
+        }
     }
     p {
         margin-bottom: 10px;
@@ -228,16 +246,6 @@ h4, h5 {
                 color: @color-dark;
                 border-radius: @radius;
             }
-        }
-        &:first-child {
-            td {
-                display: inline-block;
-                width: 100%;
-                h5 {
-                    font-size: 20px;
-                    text-align: center;
-                }  
-            }      
         }
     }
 }
