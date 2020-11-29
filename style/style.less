@@ -110,6 +110,7 @@ h4, h5 {
     width: 100%;
     padding: 20px 0;
     z-index: 999;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     label, input {
         display: none;
     }
@@ -168,6 +169,31 @@ h4, h5 {
     background-position: center;
     width: 100%;
     height: 450px;
+}
+
+.splash__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash__text {
+    background: rgba(255, 255, 255, 0.6);
+    width: 60%;
+    padding: 20px;
+    margin-top: 87px;
+    border-radius: @radius;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.287);
+    text-align: center;
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: @color-dark;
+        line-height: 1.6;
+        opacity: 0.9;
+    }
 }
 
 /* Steps */ 
@@ -333,6 +359,11 @@ h4, h5 {
         padding: @padding-section-mobile;
     }
 
+    .splash__text {
+        margin-top: 67px;
+        width: 80%;
+    }
+
     .nav {
         padding: 10px 0;
         label, input {
@@ -345,7 +376,7 @@ h4, h5 {
             height: 100vh;
             right: -100vw;
             top: 67px;
-            z-index: 998;
+            z-index: 998;   
             background: @color-light;
             transition: .3s all linear;
             align-items: flex-start;

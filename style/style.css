@@ -94,6 +94,7 @@ h5 {
   width: 100%;
   padding: 20px 0;
   z-index: 999;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 .nav label,
 .nav input {
@@ -146,6 +147,29 @@ h5 {
   background-position: center;
   width: 100%;
   height: 450px;
+}
+.splash__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.splash__text {
+  background: rgba(255, 255, 255, 0.6);
+  width: 60%;
+  padding: 20px;
+  margin-top: 87px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.287);
+  text-align: center;
+}
+.splash__text h2 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #232323;
+  line-height: 1.6;
+  opacity: 0.9;
 }
 /* Steps */
 .steps {
@@ -294,6 +318,10 @@ h5 {
   .reviews,
   .info {
     padding: 60px 0;
+  }
+  .splash__text {
+    margin-top: 67px;
+    width: 80%;
   }
   .nav {
     padding: 10px 0;
