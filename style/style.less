@@ -93,6 +93,12 @@ a {
     margin-bottom: 100px;
 }
 
+.section__paragraph--under {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 80px;
+}
+
 h1, h2, h3, h4, h5, p {
     margin: 0;
     padding: 0;
@@ -179,20 +185,27 @@ h4, h5 {
 }
 
 .splash__text {
-    background: rgba(255, 255, 255, 0.6);
+    background: @color-light;
     width: 60%;
     padding: 20px;
-    margin-top: 87px;
     border-radius: @radius;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.287);
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 87px;
     h2 {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         letter-spacing: 1px;
         color: @color-dark;
         line-height: 1.6;
         opacity: 0.9;
+        margin-right: 20px;
+    }
+    img {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
     }
 }
 
@@ -206,7 +219,7 @@ h4, h5 {
     width: 30%;
     position: relative;
     img {
-        width: 100px;
+        width: 90px;
         display: block;
         margin-bottom: 20px;
     }
@@ -234,55 +247,78 @@ h4, h5 {
 }
 
 .price__box {
-    width: 30%;
-    text-align: left;
-    button {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    h4 {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: @color-light;
         margin-bottom: 20px;
-        padding: 10px 0;
-        border: 1px solid @color-primary;
-        background: @color-primary;
-        border-radius: @radius;
-        transition: @transition;
-        cursor: pointer;
-        h4 {
-            font-size: 18px;
-            text-transform: uppercase;
-            color: @color-light;
-        }
-        &:hover {
-            transition: @transition;
-            background: darken(@color-primary, 2%);
-            border: 1px solid @color-light;
-        }
     }
     p {
-        margin-bottom: 10px;
+        text-align: left;
+        background: @color-light;
+        color: @color-dark;
+        padding: 25px;
+        font-weight: 500;
+        border-radius: @radius;
+        font-size: 16px;
     }
 }
 
-.price__box--table {
+.price_box-half {
+    width: 49%;
+    &:first-of-type {
+        margin-bottom: 25px;
+    }
+}
+
+.price__box--premium {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.price__box--row.price__box--head {
+    background: @color-secondary;
+    color: @color-light;
+}
+
+.price__box--row {
     width: 100%;
-    tr {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-        td {
-            margin: 10px 0;
-            width: 50%;
-            display: inline-block;
-            &:last-child {
-                width: 100px;
-                text-align: center;
-                background: @color-light;
-                color: @color-dark;
-                border-radius: @radius;
-            }
-        }
+    background: @color-light;
+    color: @color-primary;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: @radius;
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.price__box--list {
+    text-align: left;
+    list-style-type: disc;
+    li {
+        margin-left: 20px;
+        line-height: 1.8;
+        font-size: 16px;
+    }
+}
+
+.price__button {
+    background: @color-primary;
+    color: @color-light;
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: @transition;
+    margin-bottom: 20px;
+    &:hover {
+        transition: @transition;
+        opacity: 0.9;
     }
 }
 
@@ -318,12 +354,22 @@ h4, h5 {
 }
 
 .info__box {
-    width: 30%;
+    width: 24%;
     text-align: left;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
     h4 {
         font-size: 18px;
         margin-bottom: 20px;
+    }
+    ul {
+        li {
+            a {
+                &:hover {
+                    color: @color-primary;
+                }
+            }
+        }
     }
 }
 
@@ -465,22 +511,23 @@ h4, h5 {
             text-align: center;
         }
     }
-
-    .price__box {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .price__box--show {
-        display: none;
-    }
     
+    .price_box-half {
+        width: 100%;
+    }
+
     .reviews__box {
         width: 90%;
     }
 
     .info__box {
-        width: 100%;
+        width: 49%;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .info__box {
+        width: 100%;
     }
 }
