@@ -32,15 +32,14 @@ function scrollToElement() {
 scrollToElement();
 
 function showTable() {
-    priceBox = document.querySelectorAll('.price__box button');
+    buttons = document.querySelectorAll('.price__button');
 
-    for(let priceHead of priceBox) {
-        priceHead.addEventListener('click', function() {
-            table = priceHead.nextSibling.nextSibling;
-
-            (table.style.display === "block") ? table.style.display = "none" : table.style.display = "block";
+    for(let button of buttons) {
+        button.addEventListener('click', function() {
+            table = button.nextSibling.nextSibling;
+            
+            (table.style.maxHeight) ? table.style.maxHeight = null : table.style.maxHeight = table.scrollHeight + "px";
         })
     }
 }
-
-// showTable();
+showTable();

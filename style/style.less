@@ -174,7 +174,7 @@ h4, h5 {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 450px;
+    height: 480px;
 }
 
 .splash__wrapper {
@@ -185,27 +185,26 @@ h4, h5 {
 }
 
 .splash__text {
-    background: @color-light;
     width: 60%;
     padding: 20px;
-    border-radius: @radius;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     margin-top: 87px;
+    background: @color-light;
+    border-radius: @radius;
     h2 {
-        font-size: 18px;
-        font-weight: 500;
-        letter-spacing: 1px;
+        font-size: 22px;
+        font-weight: 400;
         color: @color-dark;
-        line-height: 1.6;
-        opacity: 0.9;
-        margin-right: 20px;
-    }
-    img {
-        height: 100px;
-        width: 100px;
-        object-fit: cover;
+        line-height: 1.5;
+        opacity: 1;
+        margin-right: 10px;
+        img {
+            height: 22px;
+            width: 22px;
+            object-fit: cover;
+        }
     }
 }
 
@@ -259,11 +258,12 @@ h4, h5 {
     p {
         text-align: left;
         background: @color-light;
-        color: @color-dark;
+        color: @color-primary;
         padding: 25px;
         font-weight: 500;
         border-radius: @radius;
         font-size: 16px;
+        opacity: 1;
     }
 }
 
@@ -300,10 +300,19 @@ h4, h5 {
 .price__box--list {
     text-align: left;
     list-style-type: disc;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
     li {
         margin-left: 20px;
         line-height: 1.8;
         font-size: 16px;
+        &:nth-child(17) {
+            list-style-type: none;
+            font-weight: 900;
+            font-size: 24px;
+            margin-left: 70px;
+        }
     }
 }
 
